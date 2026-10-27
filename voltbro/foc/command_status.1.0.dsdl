@@ -1,0 +1,21 @@
+uint8 STATUS_STAGED = 0
+uint8 STATUS_APPLIED = 1
+uint8 STATUS_REJECTED = 2
+uint8 STATUS_TIMEOUT = 3
+
+uint8 REASON_NONE = 0
+uint8 REASON_INVALID_NUMBER = 1
+uint8 REASON_OUT_OF_RANGE = 2
+uint8 REASON_STALE = 3
+uint8 REASON_TOO_FAR_AHEAD = 4
+uint8 REASON_NO_FREE_SLOT = 5
+uint8 REASON_NO_MATCHING_COMMAND = 6
+uint8 REASON_HARDWARE_FAULT = 7
+uint8 REASON_WATCHDOG = 8
+
+uint16 cycle_id
+uint8 status
+uint8 reason
+int32 apply_offset_microsecond
+
+@sealed
